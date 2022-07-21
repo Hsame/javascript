@@ -6,6 +6,29 @@ import java.util.List;
 
 public class EmpDAO extends DAO{
 	
+	//변경
+	public void updateMember(String name, String pass, String role) {
+		String sql = "update members "
+					+"set member_passwd = ?, "
+					+ "member_role = ? "
+					+ "where member_id = ?";
+		connect();
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, pass);
+			pstmt.setString(2, role);
+			pstmt.setString(3, name);
+			
+			int r = pstmt.executeUpdate();
+			System.out.println(r + "건 변경됨.");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+		
+	}
+	
 	//user_name, user_pass, role => 입력
 	public void insertMember(String name, String pass, String role) {
 		String sql = "insert into members values (?,?,?)";
