@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>word.html</title>
+  <style>
+    #show {
+      width : 270px;
+      height : 370px;
+      background-color: yellow;
+    }
+    #show > span {
+      display : inline-block;
+      width: 80px;
+      height: 25px;
+      background-color: rgb(225, 154, 255);
+      border : 1px solid aquamarine;
+      padding : 2px;
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" name="userInput">
+  <div id ="show"></div>
+  <script>
+    let words = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda ipsam? Magni quasi harum ipsum animi. Animi quam iste laudantium iusto accusamus natus incidunt impedit unde, non totam. Nihil, explicabo?'
+    let wordList = words.split(' ');
+    let show = document.getElementById('show')
+    for (let word of wordList) { 
+      let span = document.createElement('span');
+      span.innerText = word; // <span>Lorem</span>
+      show.append(span);
+    }
+
+    console.log(span.innerText);
+
+    let inp = document.querySelector('input[name="userInput"]');
+    inp.addEventListener('change', checkword)
+
+    function checkword() { 
+      if (span === inp) {
+        alert('find')
+      }
+    }
+  </script>
+</body>
+</html>
