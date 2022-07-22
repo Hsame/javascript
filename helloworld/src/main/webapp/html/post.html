@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>html/post.html</title>
+	<meta charset="UTF-8">
+	<title>html/post.html</title>
 </head>
+
 <body>
 	<h3>post 방식</h3>
 	<form action="../addMember" method="post">
@@ -18,7 +20,7 @@
 	<script>
 		// form.submit
 		let frm = document.querySelector('form');
-		frm.addEventListener('submit', function(e) {
+		frm.addEventListener('submit', function (e) {
 			let name = document.querySelector('input[name="user_name"]').value;
 			let pass = document.querySelector('input[name="user_pass"]').value;
 			let role = document.querySelector('select[name="role"]').value;
@@ -32,4 +34,5 @@
 		console.log(frm)
 	</script>
 </body>
+
 </html>

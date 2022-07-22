@@ -1,4 +1,4 @@
-package com.edu;
+package com.edu.common;
 
 public class Employee {
 	private int employeeId;
