@@ -9,6 +9,7 @@
 </head>
 <body>
 <%
+request.setCharacterEncoding("utf-8");
 String bno = request.getParameter("id");
 BoardDAO dao = new BoardDAO();
 BoardVO vo = dao.getBoard(Integer.parseInt(bno));
@@ -29,6 +30,15 @@ BoardVO vo = dao.getBoard(Integer.parseInt(bno));
 <tr><th>| 조회수 | : <%=vo.getCnt() %></th></tr>
 <tr><th>--------------------------------</th></tr>
 </table>
-
+<%
+String loginId = (String) session.getAttribute("loginId");
+if(loginId != null && loginId.equals(vo.getWriter())) {
+%>
+<a href="updateForm.jsp?bno=<%= vo.getBoardId()%>"><input type="button" value="수정"></a>
+<a href="deleteForm.jsp?bno=<%= vo.getBoardId()%>"><input type="button" value="삭제"></a>
+<%
+}
+%>
+<a href="boardList.jsp">글목록으로</a>
 </body>
 </html>
