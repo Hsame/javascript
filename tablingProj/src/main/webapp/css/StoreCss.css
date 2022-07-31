@@ -1,0 +1,20 @@
+
+  table {
+ 	width: 800px;
+  	text-align : center;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+    table-layout : fixed;
+    margin : 0 auto;
+  }
+  th, td {
+    border-bottom: 1px solid #444444;
+    padding: 5px;
+    height : auto;
+    word-break : break-all;
+  }
+  
+  thead {
+  background-color : orange;
+  color : white;
+  }

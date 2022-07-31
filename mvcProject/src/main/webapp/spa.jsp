@@ -9,9 +9,10 @@
 <body>
 	<h3>회원등록</h3>
 	<form name="addfrm" action="addMemberAjax.do" name="post">
-		아이디 : <input type="text" name="id"><br> 이름 : <input
-			type="text" name="name"><br> 이메일 : <input type="text"
-			name="mail"><br> 비밀번호 : <input type="text" name="passwd"><br>
+		아이디 : <input type="text" name="id"><br> 
+		이름 : <input type="text" name="name"><br> 
+		이메일 : <input type="text" name="mail"><br> 
+		비밀번호 : <input type="text" name="passwd"><br>
 		<input type="submit" value="저장">
 	</form>
 

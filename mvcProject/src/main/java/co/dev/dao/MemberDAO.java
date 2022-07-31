@@ -157,7 +157,7 @@ public class MemberDAO {
 			pstmt.setString(1, id);
 			
 			int result = pstmt.executeUpdate();			
-			System.out.println("정상적으로 " + result + "건이 수정되었습니다");			
+			System.out.println("정상적으로 " + result + "건이 삭제되었습니다");			
 			if (result > 0 ) {
 			return true;
 			}
