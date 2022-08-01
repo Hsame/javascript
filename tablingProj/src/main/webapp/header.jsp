@@ -7,7 +7,7 @@ pageEncoding="UTF-8"%>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/header.css" />
     <!-- 아이콘 사용 링크 -->
     <link
       rel="stylesheet"
@@ -19,7 +19,7 @@ pageEncoding="UTF-8"%>
       <table class="head_table">
         <tr>
           <td>
-            <a href="#"><img src="img/logo.PNG" alt="" /></a>
+            <a href="#"><img src="${pageContext.request.contextPath }/img/logo.PNG" alt="" /></a>
           </td>
           <td class="td_search">
             <i class="uil uil-search"></i>

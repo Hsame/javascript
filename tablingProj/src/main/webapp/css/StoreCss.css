@@ -1,11 +1,12 @@
 
-  table {
- 	width: 800px;
+  #tab {
+ 	width: 1500px;
   	text-align : center;
     border-top: 1px solid #444444;
     border-collapse: collapse;
     table-layout : fixed;
     margin : 0 auto;
+    margin-top : 150px;
   }
   th, td {
     border-bottom: 1px solid #444444;
@@ -18,3 +19,9 @@
   background-color : orange;
   color : white;
   }
+  
+  h2 {
+  margin-top : 50px;
+  text-align : center; 
+   }
+  

@@ -136,7 +136,7 @@ public class MemberRepository extends DAO{
 				member.setNickName(rs.getString(4));
 				member.setRole(rs.getInt(5));
 
-				list.add(member);
+		 		list.add(member);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

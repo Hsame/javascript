@@ -7,8 +7,11 @@ pageEncoding="UTF-8"%>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curve Outside in Active Tab</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/sidebar.css"/>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
   </head>
 
   <body>
@@ -19,7 +22,7 @@ pageEncoding="UTF-8"%>
             <span class="icon">
               <i class="input-icon uil uil-user-exclamation"></i>
             </span>
-            <span class="title">승인요청 목록</span>
+            <span class="title">승인 요청 목록</span>
           </a>
         </li>
         <li class="list">
@@ -32,9 +35,6 @@ pageEncoding="UTF-8"%>
         </li>
       </ul>
     </div>
-    <script src="${pageContext.request.contextPath }/js/sidebar.js"> 
-    </script>
-    
-    
+    <script src="${pageContext.request.contextPath }/js/sidebar.js"></script>
   </body>
 </html>

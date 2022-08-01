@@ -29,7 +29,7 @@ public class FrontController extends HttpServlet {
 		
 		mappings = new HashMap<>();
 		mappings.put("/memberInsert.do", new MemberInsertController());
-//		mappings.put("/memberList.do", new MemberListController());
+		mappings.put("/memberList.do", new MemberListController());
 //		mappings.put("/memberSearch.do", new MemberSearchController());
 //		mappings.put("/memberUpdate.do", new MemberUpdateController());
 //		mappings.put("/memberDelete.do", new MemberDeleteController());

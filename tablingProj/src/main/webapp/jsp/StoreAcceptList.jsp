@@ -7,9 +7,11 @@
 <title>점포 관리</title>
 <link rel="stylesheet" href="../css/StoreCss.css">
 </head>
+<jsp:include page="../header.jsp"/>
+<jsp:include page="../sidebarList.jsp"/>
 <body>
-<jsp:include page="../sidebar.jsp"/>
-	<table>
+<h2>승인 점포 목록</h2>
+	<table id=tab>
 		<thead>
 			<tr>
 				<th>점포명</th>
